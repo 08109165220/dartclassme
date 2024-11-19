@@ -1,5 +1,6 @@
 import 'package:args/args.dart';
 import 'List.dart';
+import 'maps.dart';
 
 const String version = '0.0.1';
 
@@ -36,6 +37,11 @@ void main(List<String> arguments) {
   listClass1.lister2();
   listClass1.lister3();
   listClass1.lister4();
+  Maps maps =Maps();
+  maps.major(12, "Strjchning");
+  maps.vitor();
+  maps.majorgeneral();
+  maps.dartclass();
   try {
     final ArgResults results = argParser.parse(arguments);
     bool verbose = false;
